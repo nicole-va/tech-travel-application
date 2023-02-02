@@ -10,7 +10,7 @@ export const Container = styled.header`
 export const HeaderContainer = styled.div`
     display: flex;
     justify-content: space-between;
-    align-align: center;
+    text-align: center;
     width: 100%;
     max-width: 958px;
     img{

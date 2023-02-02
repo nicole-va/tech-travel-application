@@ -27,6 +27,6 @@ ul{
     list-style: none
 }
 button{
-    courser: pointer;
+    cursor: pointer;
 }
 `;

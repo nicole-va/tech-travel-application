@@ -1,4 +1,3 @@
-/*eslint-disable */
 import styled from 'styled-components';
 
 export const Container = styled.div`
@@ -29,6 +28,7 @@ export const TravelItem = styled.li`
 
     img{
         height: 100%;
+        max-width: 240px;
     }
 `;
 
@@ -49,7 +49,7 @@ export const Info = styled.div`
     }
 `;
 
-export const Quality  = styled.input`
+export const Quantity  = styled.input`
     font-size: 16px;
     color: #666;
     padding: 6px;
@@ -58,7 +58,7 @@ export const Quality  = styled.input`
     border: 1px solid #0676d9;
     text-align: center;
 
-    p
+    
 `;
 
 export const Subtotal = styled.div`
@@ -69,5 +69,16 @@ export const Subtotal = styled.div`
 
     p{
         margin-right: 10px;
+    }
+`;
+
+export const TotalPrice = styled.div`
+    margin-top: 22px;
+    display: flex;
+    font-weight: 700;
+    justify-content: space-between;
+    span{
+        font-weight: 700;
+        font-size: large;
     }
 `;

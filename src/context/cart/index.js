@@ -9,15 +9,14 @@ const DEFAULT_VALUE = {
 
 const CartContext = createContext(DEFAULT_VALUE);
 
-// eslint-disable-next-line react/prop-types
-function CartContextProvider ( {children} ) {
+function CartContextProvider ({children}) {
     const [state, setState] = useState(DEFAULT_VALUE.state)
 
     return (
         <CartContext.Provider value={{ state, setState }}>
             {children}
         </CartContext.Provider>
-    )
+    );
 }
 
 export {CartContextProvider};
