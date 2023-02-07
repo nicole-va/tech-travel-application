@@ -25,15 +25,15 @@ function Cart() {
     <Container>
       <ContainerList>
         {state.cart.map((el) => (
-          <TravelItem>
+          <TravelItem key={el.id}>
             <img src={el.photo} alt={el.title} />
             <Info>
               <p>{el.title}</p>
-              <strong>{el.price}</strong>
+              <strong>R$ {el.price}</strong>
             </Info>
             <Quantity readOnly type="number" value={el.quantity}/>
             <Subtotal>
-              <p>{el.quantity * el.price}</p>
+              <p>$ {el.quantity * el.price}</p>
               <button type="button" onClick={() => deleteTravel(el.id)}>
                 <MdDelete size={24} color="#0676d9" />
               </button>
@@ -41,8 +41,8 @@ function Cart() {
         </TravelItem>
         ))}
         <TotalPrice>
-          <span>Total Price</span>
-          <span>{isTotalPrice}</span>
+          <p>TOTAL</p>
+          <span>$ {isTotalPrice}</span>
         </TotalPrice>
       </ContainerList>
     </Container>

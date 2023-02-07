@@ -5,6 +5,7 @@ export const Container = styled.main`
     margin-top: 45px;
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 `;
 
 export const List = styled.ul`
@@ -30,6 +31,7 @@ export const Unit = styled.li`
 
     img{
         max-width: 240px;
+        border-radius: 5px;
     }
     p{
         font-weight: 600;

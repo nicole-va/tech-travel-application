@@ -32,10 +32,10 @@ function Home() {
     <Container>
       <List>
           {travelList.map((el)=> ( 
-          <Unit>
+          <Unit key={el.id}>
             <img src={el.photo} alt="Travel"/>
             <p>{el.title}</p>
-            <strong>{el.price}</strong>
+            <strong>$ {el.price}</strong>
             <button type="button" onClick={() => handleAddToCart(el)}>
               <div>
                 <MdAddShoppingCart size={16} color="#fff"/>
@@ -45,7 +45,6 @@ function Home() {
           </Unit>
         ))}
       </List>
-
     </Container>
   )
 }
